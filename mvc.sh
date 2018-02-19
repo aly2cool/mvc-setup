@@ -85,6 +85,7 @@ echo '
 <% include ./partials/footer %>
 ' >> views/$NAME_OF_API/index.ejs
 
+#populate router file
 echo "const router = require('express').Router()" >> routes/$NAME_OF_API-router.js
 echo "const viewsController = require('../controllers/views-controller')" >> routes/$NAME_OF_API-router.js
 echo "const ${NAME_OF_API}Controller = require('../controllers/$NAME_OF_API-controller')" >> routes/$NAME_OF_API-router.js
@@ -93,6 +94,7 @@ echo "" >> routes/$NAME_OF_API-router.js
 echo "" >> routes/$NAME_OF_API-router.js
 echo "module.exports = router" >> routes/$NAME_OF_API-router.js
 
+#populate the dbConfig
 echo "
 module.exports = {
   host: 'localhost',
@@ -102,6 +104,7 @@ module.exports = {
 }
 " >> config/dbConfig.js
 
+#populate the model-DB file
 echo "
 const pgp = require('pg-promise')();
 const dbConfig = require('../config/dbConfig');
@@ -109,6 +112,7 @@ const db = pgp(dbConfig);
 module.exports = {}
 " >> models/$NAME_OF_API-DB.js
 
+#populate controllers
 echo "const ${NAME_OF_API}DB = require('../models/${NAME_OF_API}DB');" >> controllers/$NAME_OF_API-controller.js
 echo "module.exports = {}" >> controllers/$NAME_OF_API-controller.js
 echo "module.exports = {}" >> controllers/views-controller.js
