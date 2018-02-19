@@ -1,6 +1,6 @@
 #prompt user for names of js file and api file name
 cd ../../
-echo "What is the name your js file?"
+echo "What is the name your js file? (do not include .js extension)"
 read NAME_OF_FILE
 echo "What is the name of your api?"
 read NAME_OF_API
