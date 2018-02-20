@@ -1,13 +1,14 @@
 # mvc-setup
 ## Simple bash script to setup a RESTFUL API filesystem using MVC model.  
 ***  
-#### Note *If* you are cloning this repo, ignore step 1, and make sure to delete line 2 from mvc.sh, otherwise everything will be installed 2 levels above project directory.
-### When in project directory, use `npm install mvc-setup` to download the script. When installed: 
+#### Note *If* you are cloning this repo, ignore steps 1-3, and make sure to delete line 2 from mvc.sh, otherwise everything will be installed 2 levels above project directory.
+### When in project directory:
 ### 1. `npm init -y`
-### 2. `cd node_modules`
-### 3. `cd mvc-setup`
-### 4. `chmod +x mvc.sh`
-### 5. `. ./mvc.sh`
+### 2. `npm install mvc-setup`
+### 3. `cd node_modules`
+### 4. `cd mvc-setup`
+### 5. `chmod +x mvc.sh`
+### 6. `. ./mvc.sh`
 
 #### Note the first `.` before file name; if you forget it, you will have to `cd` into project folder manually.
 
