@@ -3,10 +3,11 @@
 ***  
 #### Note *If* you are cloning this repo, ignore step 1, and make sure to delete line 2 from mvc.sh, otherwise everything will be installed 2 levels above project directory.
 ### When in project directory, use `npm install mvc-setup` to download the script. When installed: 
-### 1. `cd node_modules`
-### 2. `cd mvc-setup`
-### 3. `chmod +x mvc.sh`
-### 4. `. ./mvc.sh`
+### 1. `npm init -y`
+### 2. `cd node_modules`
+### 3. `cd mvc-setup`
+### 4. `chmod +x mvc.sh`
+### 5. `. ./mvc.sh`
 
 #### Note the first `.` before file name; if you forget it, you will have to `cd` into project folder manually.
 
