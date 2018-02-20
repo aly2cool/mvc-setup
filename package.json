@@ -1,0 +1,19 @@
+{
+  "name": "mvc-setup",
+  "version": "1.1.0",
+  "description": "Restfuly API setup using MVC model.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aly2cool/mvc-setup.git"
+  },
+  "author": "Aly Badran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aly2cool/mvc-setup/issues"
+  },
+  "homepage": "https://github.com/aly2cool/mvc-setup#readme"
+}

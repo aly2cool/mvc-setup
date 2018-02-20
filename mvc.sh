@@ -79,10 +79,10 @@ echo '
 ' >> views/index.ejs
 
 echo '
-<%include ./partials/boilerplate %>
+<%include ../partials/boilerplate %>
     <h1> </h1>
 
-<% include ./partials/footer %>
+<% include ../partials/footer %>
 ' >> views/$NAME_OF_API/index.ejs
 
 #populate router file
@@ -113,7 +113,7 @@ module.exports = {}
 " >> models/$NAME_OF_API-DB.js
 
 #populate controllers
-echo "const ${NAME_OF_API}DB = require('../models/${NAME_OF_API}DB');" >> controllers/$NAME_OF_API-controller.js
+echo "const ${NAME_OF_API}DB = require('../models/${NAME_OF_API}-DB');" >> controllers/$NAME_OF_API-controller.js
 echo "module.exports = {}" >> controllers/$NAME_OF_API-controller.js
 echo "module.exports = {}" >> controllers/views-controller.js
 
