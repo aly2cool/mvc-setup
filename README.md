@@ -10,7 +10,6 @@
 ### 5. `chmod +x mvc.sh`
 ### 6. `. ./mvc.sh`
 
-#### Note the first `.` before file name; if you forget it, you will have to `cd` into project folder manually.
 
 #### This script will set up the entire mvc file structure for you, as well as pre-populate some files with common data.  
 #### The dependencies installed include: 
